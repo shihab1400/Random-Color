@@ -22,3 +22,10 @@ body {
 .block {
    /* border: 0.1rem solid black; */
 }
+
+@media (width<500px) {
+   .container {
+      grid-template-rows: repeat(20, calc(100dvh / 20));
+      grid-template-columns: repeat(10, minmax(2rem, 1fr));
+   }
+}
