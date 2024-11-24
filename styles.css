@@ -9,13 +9,13 @@ html {
 }
 
 body {
-   height: 100vh;
+   height: 100dvh;
    background-color: antiquewhite;
 }
 
 .container {
    display: grid;
-   grid-template-rows: repeat(10, calc(100vh / 10));
+   grid-template-rows: repeat(10, calc(100dvh / 10));
    grid-template-columns: repeat(20, minmax(2rem, 1fr));
 }
 
