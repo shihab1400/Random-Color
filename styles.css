@@ -11,6 +11,11 @@ html {
 body {
    height: 100dvh;
    background-color: antiquewhite;
+   overflow: hidden;
+}
+
+#myInput {
+   display: none;
 }
 
 .container {
@@ -21,6 +26,13 @@ body {
 
 .block {
    /* border: 0.1rem solid black; */
+   transition: transform 0.1s;
+}
+
+.block:hover {
+   transform: scale(1.2);
+   z-index: 1;
+   cursor: pointer;
 }
 
 @media (width<500px) {
